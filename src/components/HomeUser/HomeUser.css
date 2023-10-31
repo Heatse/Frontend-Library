@@ -1,0 +1,105 @@
+.content-container {
+  max-width: 1200px;
+  margin: auto;
+  min-height: 80vh;
+  background-color: whitesmoke;
+  border-radius: 4px;
+}
+
+.section-title {
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+  color: black;
+  padding-left: 18px;
+  padding-top: 20px;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  padding: 4px;
+  padding-bottom: 30px;
+}
+
+@media (min-width: 640px) {
+  .book-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .book-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3px;
+  }
+}
+
+.book-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.book-link {
+  text-decoration: none;
+}
+
+.book-card {
+  display: inline-block;
+  cursor: pointer;
+  width: 110px;
+  height: 270px;
+  text-align: start;
+  color: white;
+  background-color: #1d1313;
+  padding-top: 5px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.book-card:hover {
+  transform: scale(1.05);
+}
+
+.book-tab {
+  display: flex;
+  justify-content: center;
+}
+
+.book-image {
+  border-radius: 8px;
+  margin-bottom: 10px;
+  width: 100px;
+  height: 146px;
+  max-width: 180px;
+}
+
+.book-details {
+  display: block;
+  text-start: block;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.book-title {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.book-author {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.book-price {
+  margin-top: 0;
+}
+
+.book-sold {
+  margin-bottom: 0;
+}
